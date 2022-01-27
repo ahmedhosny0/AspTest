@@ -17,7 +17,7 @@ public partial class Category : System.Web.UI.Page
     {
         try
         {
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Erp"].ConnectionString);
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["TopSoft"].ConnectionString);
             conn.Open();
             string insert = "insert into GroupCode(ArabicName,EnglishName,DescName,Description) values(@TxtName,@TxtEname,@TxtTitle,@TxtDesc)";
             SqlCommand cmd = new SqlCommand(insert, conn);

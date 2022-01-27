@@ -17,7 +17,7 @@
     <asp:DropDownList class="auto-style3" ID="DropListCat" runat="server" AppendDataBoundItems="true" DataSourceID="Group" DataTextField="Arabicname" DataValueField="Serial" Width="157px">
                 <asp:ListItem Value="Choose a Division" Text="---Select Group Name ---"></asp:ListItem>
          </asp:DropDownList>
-         <asp:SqlDataSource ID="Group" runat="server" ConnectionString="<%$ ConnectionStrings:Erp %>" SelectCommand="SELECT DISTINCT [Serial], [ArabicName] FROM [GroupCode]"></asp:SqlDataSource>
+         <asp:SqlDataSource ID="Group" runat="server" ConnectionString="<%$ ConnectionStrings:TopSoft %>" SelectCommand="SELECT [Serial], [ArabicName] FROM [GroupCode]"></asp:SqlDataSource>
          </span></strong></label>
     </p>
     <p>
@@ -26,7 +26,7 @@
                 <asp:ListItem Value="Choose a Division" Text="---Select Unit ---"></asp:ListItem>
               </asp:DropDownList>
 
-        <asp:SqlDataSource ID="unit" runat="server" ConnectionString="<%$ ConnectionStrings:Erp %>" SelectCommand="SELECT [Serial], [ArabicName] FROM [UnitCode]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="unit" runat="server" ConnectionString="<%$ ConnectionStrings:TopSoft %>" SelectCommand="SELECT [Serial], [ArabicName] FROM [UnitCode]"></asp:SqlDataSource>
        </span></strong></label>
     </p>
 
@@ -36,7 +36,7 @@
             <asp:ListItem Value="Choose a Division" Text="---Select Store ---"></asp:ListItem>
         </asp:DropDownList>
 
-         <asp:SqlDataSource ID="Store" runat="server" ConnectionString="<%$ ConnectionStrings:Erp %>" SelectCommand="SELECT DISTINCT [Serial], [ArabicName] FROM [StoreCode]">
+         <asp:SqlDataSource ID="Store" runat="server" ConnectionString="<%$ ConnectionStrings:TopSoft %>" SelectCommand="SELECT [Serial], [ArabicName] FROM [StoreCode]">
 
          </asp:SqlDataSource>
        </span>

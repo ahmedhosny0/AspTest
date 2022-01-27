@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataSourceID="SqlDataSource11" Height="236px" Width="359px">
+    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataSourceID="SqlDataSource11" Height="16px" Width="461px" OnSelectedIndexChanged="GridView2_SelectedIndexChanged" style="margin-top: 0px">
     <Columns>
         <asp:BoundField DataField="StoreName" HeaderText="StoreName" SortExpression="StoreName" />
         <asp:BoundField DataField="ItemName" HeaderText="ItemName" SortExpression="ItemName" />
@@ -19,6 +19,6 @@
     <SortedDescendingCellStyle BackColor="#CAC9C9" />
     <SortedDescendingHeaderStyle BackColor="#00547E" />
 </asp:GridView>
-<asp:SqlDataSource ID="SqlDataSource11" runat="server" ConnectionString="<%$ ConnectionStrings:Erp %>" SelectCommand="SELECT * FROM [StoreState]"></asp:SqlDataSource>
+<asp:SqlDataSource ID="SqlDataSource11" runat="server" ConnectionString="<%$ ConnectionStrings:TopSoft %>" SelectCommand="SELECT * FROM [StoreState]"></asp:SqlDataSource>
 </asp:Content>
 

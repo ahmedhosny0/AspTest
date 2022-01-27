@@ -29,7 +29,7 @@
             <SortedDescendingCellStyle BackColor="#E9EBEF" />
             <SortedDescendingHeaderStyle BackColor="#4870BE" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1a" runat="server" ConnectionString="<%$ ConnectionStrings:Erp %>" SelectCommand="SELECT * FROM [RptSales]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1a" runat="server" ConnectionString="<%$ ConnectionStrings:TopSoft %>" SelectCommand="SELECT * FROM [RptSales]"></asp:SqlDataSource>
 </p>
 </asp:Content>
 

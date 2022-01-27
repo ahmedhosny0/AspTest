@@ -17,12 +17,12 @@ public partial class InvoiceSales : System.Web.UI.Page
 
     }
      */
-    
+
     protected void btnsubmit_Click(object sender, EventArgs e)
     {
         // i++;
 
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Erp"].ConnectionString);
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["TopSoft"].ConnectionString);
         conn.Open();
         string insert = "insert into HSales(ItemSerial,UnitSerial,GroupSerial,StoreSerial,Quantity,Price,Total) values(@TxtItem,@TxtUnit,@TxtGroup,@TxtStore,@TxtQuantity,@TxtPrice,@Total)";
         SqlCommand cmd = new SqlCommand(insert, conn);

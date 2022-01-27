@@ -24,6 +24,5 @@
 
      
          
-<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:stock %>" SelectCommand="SELECT * FROM [StoreCode]"></asp:SqlDataSource>
 </asp:Content>
 

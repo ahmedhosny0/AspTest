@@ -18,6 +18,6 @@
             <asp:BoundField DataField="Counts" HeaderText="Counts" SortExpression="Counts" />
         </Columns>
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSourcer" runat="server" ConnectionString="<%$ ConnectionStrings:Erp %>" SelectCommand="SELECT [Serial], [ArabicName], [EnglishName], [DescName], [SerialGroup], [Unit1], [PricePurchase1Unit1], [PriceSale1Unit1], [Counts] FROM [ItemCode]"  UpdateCommand="update ItemCode set [ArabicName]=@ArabicName, [EnglishName]=@EnglishName, [DescName]=@DescName, [SerialGroup]=@SerialGroup, [Unit1]=@Unit1, [PricePurchase1Unit1]=@PricePurchase1Unit1, [PriceSale1Unit1]=@PriceSale1Unit1, [Counts]=@Counts where serial=@serial" DeleteCommand="delete FROM [ItemCode] where [Serial]=@Serial"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSourcer" runat="server" ConnectionString="<%$ ConnectionStrings:TopSoft %>" SelectCommand="SELECT [Serial], [ArabicName], [EnglishName], [DescName], [SerialGroup], [Unit1], [PricePurchase1Unit1], [PriceSale1Unit1], [Counts] FROM [ItemCode]" UpdateCommand="Update [ItemCode] Set [ArabicName]=@ArabicName, [EnglishName]=@EnglishName, [DescName]=@DescName, [SerialGroup]=@SerialGroup, [Unit1]=@Unit1, [PricePurchase1Unit1]=@PricePurchase1Unit1, [PriceSale1Unit1]=@PriceSale1Unit1, [Counts]=@Counts where [Serial]=@Serial" DeleteCommand="Delete from [ItemCode] where [Serial]=@Serial"></asp:SqlDataSource>
 </asp:Content>
 

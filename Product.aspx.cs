@@ -15,7 +15,7 @@ public partial class Product : System.Web.UI.Page
     protected void btnsubmit_Click(object sender, EventArgs e)
     {
       //  try{
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Erp"].ConnectionString);
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["TopSoft"].ConnectionString);
         conn.Open();
         string insert = "insert into ItemCode(ArabicName,EnglishName,DescName,Description,SerialGroup,Unit1,StoreId,PricePurchase1Unit1,PriceSale1Unit1,Counts)  values(@TxtName,@TxtEname,@TxtTitle,@TxtDesc,@DropCat,@DropUnit,@StoreName,@PricePurchase,@PriceSale,@count)";                                                  
         //string insert = "insert into ItemCard ItemName,ItemEname,ItemDesc,ItemDescription,ItemCategory,ItemUnit1,ItemCodePurchasePrice1,ItemCodePrice1,StoreCodeName)values(@TxtName,@TxtEname,@TxtTitle,@TxtDesc,@DropCat,@DropUnit,@PricePurchase,@PriceSale,@DropStore)";            

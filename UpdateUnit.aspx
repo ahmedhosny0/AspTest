@@ -23,6 +23,6 @@
         <SortedDescendingCellStyle BackColor="#D6DFDF" />
         <SortedDescendingHeaderStyle BackColor="#002876" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1z" runat="server" ConnectionString="<%$ ConnectionStrings:Erp %>" SelectCommand="SELECT [Serial], [ArabicName], [EnglishName], [DescName], [Description] FROM [UnitCode]" DeleteCommand="Delete from [UnitCode] where [Serial]=@Serial" UpdateCommand=" Update [UnitCode] set [ArabicName]=@Arabicname, [EnglishName]=@EnglishName, [DescName]=@DescName, [Description]=@Description  where [Serial]=@Serial"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1z" runat="server" ConnectionString="<%$ ConnectionStrings:TopSoft %>" SelectCommand="SELECT [Serial], [ArabicName], [EnglishName], [DescName], [Description] FROM [UnitCode]" UpdateCommand="Update UnitCode Set  [ArabicName]=@ArabicName, [EnglishName]=@EnglishName, [DescName]=@DescName, [Description]=@Description Where Serial=@Serial" DeleteCommand="Delete from Unitcode where serial=@serial"></asp:SqlDataSource>
 </asp:Content>
 

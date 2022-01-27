@@ -17,7 +17,7 @@ public partial class Store : System.Web.UI.Page
     {
         try
         {
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Erp"].ConnectionString);
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["TopSoft"].ConnectionString);
             conn.Open();
             string insert = "insert into StoreCode(ArabicName,EnglishName,DescName,Description,AreaStock,Address,NumberOfLeans,StoreKeeper,Phone1,Phone2,Phone3) values(@TxtName,@TxtEname,@TxtTitle,@TxtDesc,@TxtArea,@TxtAddress,@TxtNumOfLeans,@TxtKeeper,@TxtTel1,@TxtTel2,@TxtTel3)";
             SqlCommand cmd = new SqlCommand(insert, conn);

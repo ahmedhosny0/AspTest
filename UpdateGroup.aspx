@@ -23,6 +23,17 @@
         <SortedDescendingCellStyle BackColor="#CAC9C9" />
         <SortedDescendingHeaderStyle BackColor="#00547E" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1s" runat="server" ConnectionString="<%$ ConnectionStrings:Erp %>" SelectCommand="SELECT [Serial], [ArabicName], [EnglishName], [DescName], [Description] FROM [GroupCode]" DeleteCommand="Delete from [GroupCode] where [Serial]=@Serial" UpdateCommand=" Update [GroupCode] set [ArabicName]=@Arabicname, [EnglishName]=@EnglishName, [DescName]=@DescName, [Description]=@Description  where [Serial]=@Serial" ></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1s" runat="server" ConnectionString="<%$ ConnectionStrings:TopSoft %>" SelectCommand="SELECT [Serial], [ArabicName], [EnglishName], [DescName], [Description] FROM [GroupCode]" DeleteCommand="Delete from [GroupCode] where [Serial]=@Serial" UpdateCommand=" Update [GroupCode] set [ArabicName]=@Arabicname, [EnglishName]=@EnglishName, [DescName]=@DescName, [Description]=@Description  where [Serial]=@Serial" >
+        <DeleteParameters>
+            <asp:Parameter Name="Serial" />
+        </DeleteParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Arabicname" />
+            <asp:Parameter Name="EnglishName" />
+            <asp:Parameter Name="DescName" />
+            <asp:Parameter Name="Description" />
+            <asp:Parameter Name="Serial" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
 </asp:Content>
 
